@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:the_barre_code/pages/barreCodePage.dart';
+import 'package:the_barre_code/pages/catPage.dart';
 import 'package:the_barre_code/pages/homePage.dart';
 
 
@@ -32,11 +33,13 @@ class _MyAppState extends State<MyApp> {
           title: const [
             Text("Accueil"),
             Text("Lire des codes barres"),
+            Text("image de chat aléatoire"),
           ][_currentIndex], // en fonction de _currentIndex qui depend de la liste
         ),
         body: [
           const HomePage(),
           const BarrePage(),
+          const CatPage(),
         ][_currentIndex],// en fonction de _currentIndex qui depend de la liste
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
@@ -54,6 +57,10 @@ class _MyAppState extends State<MyApp> {
             BottomNavigationBarItem(
               icon: Icon(Icons.barcode_reader),
               label: 'Scanneur'
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.photo),
+              label: 'cat image'
             ),
           ]
         ) ,

@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Et voici la home page :)"),
+          Text("Et voici la home page"),
           Text("en construction"),
         ],
       )
